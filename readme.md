@@ -1,4 +1,4 @@
-# RSS for Node
+# ATOM for Node
 
   Fast and simple Javascript-based ATOM generator/builder for Node projects.
 
@@ -21,7 +21,7 @@
     var feed = new ATOM({
             title: 'title',
             description: 'description',
-            feed_url: 'http://example.com/rss.xml',
+            feed_url: 'http://example.com/atom.xml',
             site_url: 'http://example.com',
             image_url: 'http://example.com/icon.png',
             author: 'Dylan Greene'
@@ -44,14 +44,14 @@
 
  * _title_ <string> Title of your site or feed
  * _description_ <string> Optional. Short description of the feed.
- * _feed_url_ <url> Url to the rss feed.
+ * _feed_url_ <url> Url to the Atom feed.
  * _site_url_ <url> Url to the site that the feed is for.
  * _image_url_ <url> Optional. Small image for feed readers to use.
  * _author_ <string> Who owns this feed.
 
 ### Item Options
 
-In RSS an item can be used for a blog entry, project update, log entry, etc.  Your rss feed
+In Atom an item can be used for a blog entry, project update, log entry, etc.  Your Atom feed
 an have any number of items. Ten to tenty is usually good.
 
  * _title_ <string> Title of this particular item.
@@ -70,7 +70,7 @@ an have any number of items. Ten to tenty is usually good.
 
 ### Methods
 
- * _item(item_options)_ - add an rss item, article, entry etc.
+ * _item(item_options)_ - add an Atom item, article, entry etc.
  * _xml([indent])_ - return the xml.  If you pass in true it will use four spaces for indenting. If you prefer
  tabs use \t instead of true.
 
